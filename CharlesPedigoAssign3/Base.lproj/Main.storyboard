@@ -118,7 +118,7 @@
         <!--DetailViewController-->
         <scene sceneID="JLI-8J-9gm">
             <objects>
-                <viewController title="DetailViewController" id="6ez-72-t5o" sceneMemberID="viewController">
+                <viewController title="DetailViewController" id="6ez-72-t5o" customClass="ViewController" customModule="CharlesPedigoAssign3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FMd-3S-BXa">
                         <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -166,18 +166,99 @@
         <!--ReviewViewController-->
         <scene sceneID="E8k-FB-KhT">
             <objects>
-                <viewController title="ReviewViewController" id="mnJ-aE-297" sceneMemberID="viewController">
+                <viewController title="ReviewViewController" id="mnJ-aE-297" customClass="ViewController" customModule="CharlesPedigoAssign3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UKH-X8-76n">
                         <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rate Your Recipe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="To3-HO-1MU">
+                                <rect key="frame" x="16" y="230" width="370" height="42"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uix-Aq-4Ek">
+                                <rect key="frame" x="16" y="302" width="370" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OaY-kB-ghd">
+                                        <rect key="frame" x="0.0" y="0.0" width="74" height="50"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Poor">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PPj-bH-F2T">
+                                        <rect key="frame" x="74" y="0.0" width="74" height="50"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Fair">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6hl-oe-juN">
+                                        <rect key="frame" x="148" y="0.0" width="74" height="50"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Good">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h5H-Gr-BFB">
+                                        <rect key="frame" x="222" y="0.0" width="74" height="50"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Great">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aQh-EG-JwF">
+                                        <rect key="frame" x="296" y="0.0" width="74" height="50"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Wow">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="aYd-4d-uSA"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Rating: -/5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fcI-bJ-0HE">
+                                <rect key="frame" x="16" y="382" width="370" height="36"/>
+                                <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MgK-cf-8lu">
+                                <rect key="frame" x="16" y="448" width="370" height="50.666666666666686"/>
+                                <color key="backgroundColor" red="0.54126833495651039" green="0.93726532651934513" blue="0.96080452803402061" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="🏠Submit Review">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="apd-1q-40R"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="1" green="0.87761613402540528" blue="0.51046453610162101" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="MgK-cf-8lu" firstAttribute="top" secondItem="fcI-bJ-0HE" secondAttribute="bottom" constant="30" id="2Ow-3F-W3S"/>
+                            <constraint firstItem="apd-1q-40R" firstAttribute="trailing" secondItem="MgK-cf-8lu" secondAttribute="trailing" constant="16" id="3W7-eP-gJp"/>
+                            <constraint firstItem="Uix-Aq-4Ek" firstAttribute="leading" secondItem="apd-1q-40R" secondAttribute="leading" constant="16" id="9zp-UX-tNC"/>
+                            <constraint firstItem="MgK-cf-8lu" firstAttribute="leading" secondItem="apd-1q-40R" secondAttribute="leading" constant="16" id="Gor-lk-ZXg"/>
+                            <constraint firstItem="fcI-bJ-0HE" firstAttribute="top" secondItem="Uix-Aq-4Ek" secondAttribute="bottom" constant="30" id="Sjv-H2-D5S"/>
+                            <constraint firstItem="To3-HO-1MU" firstAttribute="top" secondItem="apd-1q-40R" secondAttribute="top" constant="10" id="UFG-3m-9fr"/>
+                            <constraint firstItem="Uix-Aq-4Ek" firstAttribute="top" secondItem="To3-HO-1MU" secondAttribute="bottom" constant="30" id="clQ-jg-9Y6"/>
+                            <constraint firstItem="apd-1q-40R" firstAttribute="trailing" secondItem="To3-HO-1MU" secondAttribute="trailing" constant="16" id="cqD-SV-6hO"/>
+                            <constraint firstItem="fcI-bJ-0HE" firstAttribute="leading" secondItem="apd-1q-40R" secondAttribute="leading" constant="16" id="htg-tw-pLm"/>
+                            <constraint firstItem="apd-1q-40R" firstAttribute="trailing" secondItem="Uix-Aq-4Ek" secondAttribute="trailing" constant="16" id="qDZ-fg-CIK"/>
+                            <constraint firstItem="To3-HO-1MU" firstAttribute="leading" secondItem="apd-1q-40R" secondAttribute="leading" constant="16" id="rwD-a1-yrR"/>
+                            <constraint firstItem="apd-1q-40R" firstAttribute="trailing" secondItem="fcI-bJ-0HE" secondAttribute="trailing" constant="16" id="xFg-2F-xL5"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="R5H-bi-fGr"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fq5-ya-cpc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2822" y="450"/>
+            <point key="canvasLocation" x="2820.8955223880594" y="449.65675057208233"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="gY7-lD-v4z">
@@ -204,11 +285,17 @@
     </inferredMetricsTieBreakers>
     <resources>
         <image name="RecipeBookBackground" width="3969" height="5324"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
+        <systemColor name="systemGray3Color">
+            <color red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
